@@ -79,7 +79,7 @@ def extract_query(data:str, query:str=None, google:bool=False, model:str="gpt-3.
     small_model_extract_query = "Respond only using JSON in the given format. Only use one JSON object."\
     "{"\
     "\"message\": <String: success|error>,"\
-    "\"reading\": <Boolean>"\
+    "\"reading\": <Boolean>,"\
     "?\"content\": <String>"\
     "}"\
     "\nThere should be no natural language other than the keys/values."
